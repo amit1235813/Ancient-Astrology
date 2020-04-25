@@ -34,6 +34,8 @@ console.log(mime.lookup('json'));
 console.log(mime.lookup('./index.js'));
 console.log(mime.lookup('./dist/polyfills-es2015.js'));
 
+app.use(express.static(__dirname + '/dist'));
+
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
@@ -49,7 +51,7 @@ app.use('/api/loggedIn/content', content);
 app.use('/api/loggedIn/likes', likes);
 app.use('/api/loggedIn/feedback', feedback);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 const server = app.listen(port, () => console.log(`Listening on port ${port}...`)); //Change this to winston
 
