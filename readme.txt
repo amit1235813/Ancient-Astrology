@@ -10,7 +10,7 @@ Successfully deployed to Heroku using local build. Later deploy with cloud build
 ...
 
 Astrology Website
-Version 1.0.0
+Version 1.0.0 - This does not exist anymore as this was used as a base.
 
 1. Created an API for users to signup using email
 2. Created an API for users to login using email
