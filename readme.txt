@@ -5,6 +5,8 @@ Version 1.0.1
 2. Created a login service which integrates with the backend login API
 3. This code needs to be cleaned further
 
+Successfully deployed to Heroku using local build. Later deploy with cloud build.
+
 ...
 
 Astrology Website
