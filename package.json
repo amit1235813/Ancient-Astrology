@@ -23,6 +23,7 @@
     "helmet": "^3.22.0",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.15",
+    "mime-types": "^2.1.27",
     "mongoose": "^5.9.9"
   },
   "description": ""

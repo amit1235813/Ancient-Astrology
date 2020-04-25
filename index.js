@@ -6,6 +6,7 @@ const mongoose = require('mongoose'); //Do not have to import mongoose for API f
 const config = require('config');
 const cors = require('cors');
 const path = require('path');
+const mime = require('mime-types');
 
 if (!config.get('jwtPrivateKey')) {
 	console.error('FATAL ERROR: jwtPrivateKey is not defined');
@@ -28,6 +29,10 @@ const content = require('./routes/content');
 const likes = require('./routes/likes');
 const feedback = require('./routes/feedback');
 require('./startup/prod')(app);
+
+console.log(mime.lookup('json'));
+console.log(mime.lookup('./index.js'));
+console.log(mime.lookup('./dist/polyfills-es2015.js'));
 
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
