@@ -35,7 +35,7 @@ console.log(mime.lookup('./index.js'));
 console.log(mime.lookup('./dist/polyfills-es2015.js'));
 
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/index.html'));
+  res.sendFile(path.join(__dirname + '/dist//n/index.html'));
 });
 
 app.use(express.json());
