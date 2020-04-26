@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
         //this.token = response.body.token;
         //this.userID = response.body._id;
         //this.authorize();
-        console.log('response of Express login API to Angular', response);
+        console.log('response of Express login API to Angular on login', response);
         this.router.navigate(['/me']); //set a boolean of valid login, only then move to welcome page
         localStorage.setItem('token', response.body['token']);
         /*

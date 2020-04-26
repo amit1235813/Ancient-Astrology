@@ -1,3 +1,13 @@
+
+Astrology Website
+Version 1.0.3
+
+1. Made the Login API work
+2. Made the Signup API work
+3. Added nested components for the story page.
+
+...
+
 Astrology Website
 Version 1.0.2
 

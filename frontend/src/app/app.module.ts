@@ -13,6 +13,7 @@ import { SignupService } from './services/signup.service';
 import { LoginService } from './services/login.service';
 import { AuthorizeService } from './services/authorize.service';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { StoryComponent } from './story/story.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
 import { ContactComponent } from './contact/contact.component';
@@ -26,6 +27,7 @@ import { NoAccessComponent } from './no-access/no-access.component';
     SignupComponent,
     LoginComponent,
     WelcomeComponent,
+    StoryComponent,
     SidebarComponent,
     ContentComponent,
     ContactComponent,
@@ -46,6 +48,10 @@ import { NoAccessComponent } from './no-access/no-access.component';
         {
           path: 'signup',
           component: SignupComponent
+        },
+        {
+          path: 'story',
+          component: StoryComponent
         }
         //{path: '**', component: NotFoundComponent},
       ]),

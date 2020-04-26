@@ -10,9 +10,9 @@ import { map } from 'rxjs/operators';
 })
 export class LoginService {
 
-	//private url = 'http://localhost:3000/api/login';
-  private url = 'api/login'; //prod
-	private welcomeUrl = 'http://localhost:3000/api/loggedin/me';
+	private url = 'http://localhost:8080/api/login';
+  //private url = 'api/login'; //prod
+	private welcomeUrl = 'http://localhost:/api/loggedin/me';
 
 
   constructor(private httpClient: HttpClient) {

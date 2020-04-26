@@ -3,6 +3,8 @@ import { FormGroup, FormControl } from '@angular/forms';
 
 import { SignupService } from '../services/signup.service';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -17,7 +19,7 @@ export class SignupComponent implements OnInit {
     'password': new FormControl()
   });
 
-  constructor(private service: SignupService) {
+  constructor(private service: SignupService, private router: Router) {
 
    }
 
@@ -27,11 +29,13 @@ export class SignupComponent implements OnInit {
   signup() {
     let user = this.signupForm.value;
 		console.log('user', user);
-    console.log('stringified user', JSON.stringify(user));	  	
+    //console.log('stringified user', JSON.stringify(user));	  	
   	//Get user from the html
   	this.service.createUser(user)
   		.subscribe(response => {
-  			console.log('Response from signup API,', response);
+  			console.log('response of Express login API to Angular on signup', response);
+        this.router.navigate(['/me']); //set a boolean of valid login, only then move to welcome page
+        localStorage.setItem('token', response.body['token']);
   	});
   }
 
