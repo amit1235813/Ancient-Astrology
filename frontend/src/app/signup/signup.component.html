@@ -1,0 +1,47 @@
+<!--
+<form>
+	<input type="text" name="firstname" class="input-lg" placeholder="First Name" />
+	<input type="text" name="username" class="input-lg" placeholder="Username" />
+	<input type="email" name="" class="input-lg" placeholder="Email" />
+	<input type="password" name="" class="input-lg" placeholder="Password" />
+	<button class="btn btn-primary" (click)="signup(form.value)">Signup</button>
+</form>
+-->
+
+<form [formGroup]="signupForm" (ngSubmit)="signup()">
+    <div class="form-group">
+        <label for="username">First Name</label>
+        <input 
+        		formControlName="firstname"
+            id="firstname" 
+            type="text" 
+            class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input 
+        		formControlName="username"
+            id="username" 
+            type="text" 
+            class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="username">Email</label>
+        <input 
+        		formControlName="email"
+            id="email" 
+            type="text" 
+            class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input 
+        		formControlName="password"
+            id="password" 
+            type="text" 
+            class="form-control">
+    </div>
+    <button class="btn btn-primary" type="submit">Signup</button>
+</form>
+
+<a [routerLink]="['/']"> Back to login </a>

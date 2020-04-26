@@ -1,0 +1,19 @@
+nav {
+	background-color: #1a1a00;
+}
+
+nav a {
+	color: #cccc00;
+}
+
+.navbar-collapse,
+.navbar-nav {
+	background-color: #1a1a00;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover,
+.nav-link:focus,
+.nav-link:hover {
+	color: #ffffe6;
+}

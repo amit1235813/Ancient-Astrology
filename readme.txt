@@ -1,4 +1,14 @@
 Astrology Website
+Version 1.0.2
+
+Made the home page prettier. Still a lots to do.
+1. Added a favicon
+2. Added spacing and hover effects to navbar. Added button texts.
+3. Made prettier login form format based on existing Bootstrap form.
+
+...
+
+Astrology Website
 Version 1.0.1
 
 1. Created a frontend folder in Angular

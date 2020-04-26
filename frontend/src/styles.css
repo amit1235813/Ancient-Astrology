@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html, body, div {
+	background-color: #ffffe6;
+}
+
+body {
+	padding: 20px;
+	padding-top: 80px;
+}
+
+.astro-form {
+	width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.astro-form .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.astro-form .form-control:focus {
+  z-index: 2;
+}
+.astro-form input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.astro-form input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
