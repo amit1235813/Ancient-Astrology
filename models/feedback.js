@@ -29,7 +29,8 @@ const Feedback = mongoose.model('Feedback', new mongoose.Schema({
 //validate for tags and script injection, for length
 function validateFeedback(feedback) {
   const schema = Joi.object({
-    feedbackText: Joi.string().min(15).max(1500).required()
+    feedbackText: Joi.string().min(15).max(1500).required(),
+    feedbackType: Joi.string()
     //do we need to add joi validaiton for feedback type
   });
 

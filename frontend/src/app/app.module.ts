@@ -12,10 +12,12 @@ import { LoginComponent } from './login/login.component';
 import { SignupService } from './services/signup.service';
 import { LoginService } from './services/login.service';
 import { AuthorizeService } from './services/authorize.service';
+import { FeedbackService } from './services/feedback.service';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { StoryComponent } from './story/story.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContentComponent } from './content/content.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NoAccessComponent } from './no-access/no-access.component';
@@ -32,7 +34,8 @@ import { NoAccessComponent } from './no-access/no-access.component';
     ContentComponent,
     ContactComponent,
     NotFoundComponent,
-    NoAccessComponent
+    NoAccessComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +55,14 @@ import { NoAccessComponent } from './no-access/no-access.component';
         {
           path: 'story',
           component: StoryComponent
+        },
+        {
+          path: 'feedback',
+          component: FeedbackComponent
+        },
+        {
+          path: 'contact',
+          component: ContactComponent
         }
         //{path: '**', component: NotFoundComponent},
       ]),
@@ -62,7 +73,8 @@ import { NoAccessComponent } from './no-access/no-access.component';
   providers: [
     SignupService,
     LoginService,
-    AuthorizeService
+    AuthorizeService,
+    FeedbackService
   ],
   bootstrap: [AppComponent]
 })

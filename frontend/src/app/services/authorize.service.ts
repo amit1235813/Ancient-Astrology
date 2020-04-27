@@ -14,8 +14,14 @@ export class AuthorizeService {
   }
 
   authorizeUser(token, userID) {
+  	//var = this.x.servcice.enethid
+  	//var will be different for different url
+  	//if other servic eposts to other url, auth is called.post
+  	//No need to have auth servcice
+  	//Just call it in another service.
   	return this.httpClient.post(this.url, userID, {headers: {'x-auth-token': token}, observe: 'response'} ); //No need to stringify the user object
   	//return this.httpClient.post(this.url, JSON.stringify(user));
+
   }
 
 }

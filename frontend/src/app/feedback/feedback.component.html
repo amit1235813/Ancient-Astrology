@@ -1,0 +1,17 @@
+<div class="d-med-flex justify-content-md-center astro-form">
+    <form [formGroup]="feedbackForm" (ngSubmit)="feedback()">
+        <div class="form-group">
+            <label for="feedbackText" class="sr-only">Tell us what can be improved...</label>
+            <input 
+            	formControlName="feedbackText"
+                id="feedbackText" 
+                type="text" 
+                class="form-control"
+                placeholder="Tell us what can be improved..."
+                required autofocus
+            >
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">This needs to be improved</button>
+    </form>
+    
+</div>
